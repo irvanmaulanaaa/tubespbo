@@ -1,24 +1,23 @@
 package Product;
 
 public class Product {
-
+ 
     private String productCode;
     private String productName;
-    private String productPrice;
-    private String productStock;
+    private double productPrice; 
+    private int productStock;    
     private String productDescription;
 
-    public Product(String productCode, String productName, String productPrice, String productStock,
-            String productDescription) {
+    public Product(String productCode, String productName, double productPrice, int productStock,
+                   String productDescription) {
 
         this.productCode = productCode;
         this.productName = productName;
         this.productPrice = productPrice;
         this.productStock = productStock;
         this.productDescription = productDescription;
-
     }
-
+    
     public String getProductCode() {
         return productCode;
     }
@@ -27,11 +26,11 @@ public class Product {
         return productName;
     }
 
-    public String getProductPrice() {
+    public double getProductPrice() {
         return productPrice;
     }
 
-    public String getProductStock() {
+    public int getProductStock() {
         return productStock;
     }
 

@@ -9,4 +9,5 @@ public interface StroreInterface {
     public void removeProduct (Product product) throws SQLException;
     public void updateProduct (Product product) throws SQLException;
     public void viewProduct   (Product product) throws SQLException;
+    public abstract boolean login (String username, String password);
 }

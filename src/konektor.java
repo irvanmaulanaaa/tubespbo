@@ -3,6 +3,7 @@ import java.sql.*;
 
 public class konektor {
     public static void main(String[] args) {
+        
         MysqlDataSource dataSc = new MysqlDataSource();
 
         String url = "jdbc:mysql://localhost:3306/tokomadura";
