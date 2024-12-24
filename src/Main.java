@@ -36,8 +36,7 @@ public class Main {
                     char[] loginPasswordArray = console.readPassword("Password: ");
                     String loginPassword = new String(loginPasswordArray);
 
-                    if (loginUsername.equalsIgnoreCase("owner")) {
-                        // Login sebagai Owner) 
+                    if (loginUsername.equalsIgnoreCase("owner")) { 
                         currentOwner = new Owner(loginUsername, loginPassword);
                         if (currentOwner.login(loginUsername, loginPassword)) {
                             System.out.println("\nLogin berhasil sebagai Owner!");
@@ -46,7 +45,6 @@ public class Main {
                             System.out.println("Login gagal! Cek username dan password.");
                         }
                     } else {
-                        // Login sebagai Customer
                         currentCustomer = new Customer(loginUsername, loginPassword, null);
                         if (currentCustomer.login(loginUsername, loginPassword)) {
                             System.out.println("\nLogin berhasil sebagai Customer!");
@@ -200,7 +198,6 @@ public class Main {
         } while (choice != 5);
     }
 
-    // Menu untuk Customer
     private static void customerMenu(Customer customer, Scanner scanner) {
         int choice;
         System.out.println("\nSelamat datang di Toko Madura, " + customer.getUsername() + "!");
@@ -260,5 +257,5 @@ public class Main {
             }
         } while (choice != 5);
     }
-    
+
 }
